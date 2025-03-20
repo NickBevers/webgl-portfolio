@@ -1,0 +1,55 @@
+:root {
+  --max-width: 1400px;
+  --border-radius: 12px;
+  font-family: "Doner-Text", sans-serif;
+
+  /* Neutrals */
+  --black: #000000;
+  --white: #ffffff;
+  --neutral-50: #fafafa;
+  --neutral-100: #f2f2f2;
+  --neutral-200: #e6e6e6;
+  --neutral-300: #cccccc;
+  --neutral-400: #b3b3b3;
+  --neutral-500: #999999;
+  --neutral-600: #737373;
+  --neutral-700: #545454;
+  --neutral-800: #333333;
+  --neutral-900: #1a1a1a;
+
+  /* Beiges */
+  --beige-50: #f7f5f2;
+  --beige-100: #ECE7DF;
+  --beige-200: #E4DDD2;
+  --beige-300: #D9CEBF;
+  --beige-400: #CFC2AF;
+  --beige-500: #C0AE96;
+  --beige-900: #403526;
+
+  /* Sages */
+  --sage-100: #E5EBE9;
+  --sage-300: #C6D2CE;
+  --sage-400: #A9BCB6;
+  --sage-500: #8CA69D;
+  --sage-600: #6F9085;
+  --sage-700: #59736A;
+  --sage-800: #435650;
+  --sage-900: #2D3935;
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: "Doner-Display", sans-serif;
+}

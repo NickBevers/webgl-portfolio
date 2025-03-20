@@ -1,0 +1,72 @@
+.plane{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.name{
+  font-size: clamp(10rem, 10vw, 15rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Doner-Display', sans-serif;
+  color: var(--beige-200);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 0.9;
+  margin: 0 auto;
+  width: fit-content;
+  height: auto;
+}
+
+.firstname, .lastname{
+  opacity: 0;
+}
+
+.firstname{
+  margin-left: -12rem;
+  width: fit-content;
+  animation: fadeIn 2s ease-in-out 4s, slideInLeft 1.2s ease-in-out 3.8s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transform: translateX(-10%);
+}
+
+.lastname{
+  margin-right: -12rem;
+  animation: fadeIn 2s ease-in-out 4.5s, slideInRight 1.2s ease-in-out 4.2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transform: translateX(10%);
+}
+
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft{
+  0%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight{
+  0%{
+    transform: translateX(10%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
