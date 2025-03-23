@@ -1,0 +1,11 @@
+.contactContainer {
+  min-height: 100dvh;
+  width: 100dvw;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.waveOrbContainer{
+  width: 100%;
+}

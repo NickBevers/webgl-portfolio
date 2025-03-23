@@ -10,7 +10,7 @@ interface GridItemProps {
 
 const PlusIcon = (
   <div className={styles.plusIcon}>
-    <Image src='/images/plus.svg' alt="plus icon" fill />
+    <Image src='/images/icons/plus.svg' alt="plus icon" fill />
   </div>
 );
 
@@ -20,6 +20,9 @@ const GridItem: FC<GridItemProps> = ({ item }) => {
 
   return (
     <div className={styles.gridItem}>
+      {/* If hover is enabled -> use textureplane */}
+      {/* <TexturePlane textureUrl1="/images/temp.jpg" textureUrl2="/images/temp2.jpg" displacementUrl="/images/displacement.jpg" /> */}
+
       {item.link ? (
         <div onClick={() => openLink(item.link as string)} style={{ width: '100%', height: '100%', cursor: 'pointer' }}>
           {/* Plus sign */}
