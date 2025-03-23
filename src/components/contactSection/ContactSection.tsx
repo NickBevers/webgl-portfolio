@@ -6,8 +6,11 @@ const ContactSection = () => {
   return (
     <div className={styles.contactContainer}>
       {/* Left side - Text & Form */}
-      <div>
-        Test
+      <div className={styles.form}>
+        {/* Header */}
+        <p className={styles.header}>Shape <span className={styles.catch}>your</span><br /> next big wave</p>
+
+        {/* Form */}
       </div>
 
       {/* Right side - Osscilating wave shape */}
