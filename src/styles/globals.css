@@ -36,6 +36,8 @@
   --sage-800: #435650;
   --sage-900: #2D3935;
   
+  /* Screen sizes */
+  --screen-tablet: 768px
 }
 
 * {
@@ -52,4 +54,9 @@ body {
 
 h1, h2 {
   font-family: "Doner-Display", sans-serif;
+}
+
+p {
+  font-family: 'Doner-Text';
+  font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1900 - 300)));
 }

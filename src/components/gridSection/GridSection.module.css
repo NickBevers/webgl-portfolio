@@ -1,0 +1,12 @@
+.gridContainer {
+  width: 100dvw;
+  display: grid;
+  gap: 0px;
+  padding: 0px;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+
+  @container (max-width: var(--screen-tablet)) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

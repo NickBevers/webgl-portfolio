@@ -2,13 +2,13 @@
 import React, { useRef, useState } from 'react';
 import { useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader, Mesh } from 'three';
-import { a, useSpring } from '@react-spring/three';
+import { animated, useSpring } from '@react-spring/three';
 import CustomShaderMaterial from './CustomShaderMaterial';
 
 const Plane: React.FC = () => {
   const ref = useRef<Mesh>(null);
   const [hovered, setHovered] = useState(false);
-  const [texture, displacement] = useLoader(TextureLoader, ['/images/image1.jpg', '/images/displacement.jpg']);
+  const [texture, displacement] = useLoader(TextureLoader, ['/images/logo/brown-200', '/images/displacement.jpg']);
 
   const hoverSpring = useSpring({ uHover: hovered ? 1 : 0 });
 
@@ -19,7 +19,7 @@ const Plane: React.FC = () => {
   });
 
   return (
-    <a.mesh
+    <animated.positionMesh
       ref={ref}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
@@ -32,7 +32,7 @@ const Plane: React.FC = () => {
         uTime={0}
         uHover={hoverSpring.uHover}
       />
-    </a.mesh>
+    </animated.positionMesh>
   );
 };
 

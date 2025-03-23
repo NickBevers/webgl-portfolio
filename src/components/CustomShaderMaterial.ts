@@ -15,14 +15,4 @@ const CustomShaderMaterial = shaderMaterial(
   distortFragment
 );
 
-// extend({ CustomShaderMaterial });
-
-// declare global {
-//   namespace JSX {
-//     interface IntrinsicElements {
-//       customShaderMaterial: ReactThreeFiber.Object3DNode<typeof CustomShaderMaterial, typeof CustomShaderMaterial>;
-//     }
-//   }
-// }
-
 export default CustomShaderMaterial;
