@@ -132,6 +132,7 @@ const ShockWaveSphere: React.FC = () => {
       if (window.innerWidth >= 1600) setCameraPosition([0, 0, 2.5])
       else if (window.innerWidth >= 1000) setCameraPosition([0, 0, 2.5 * 1.2])
       else if (window.innerWidth >= 678) setCameraPosition([0, 0, 2])
+      else setCameraPosition([0, 0, 1.8])
     }
 
     window.addEventListener('resize', handleResize)

@@ -1,4 +1,4 @@
-.contactContainer {
+/* .contactContainer {
   height: auto;
   width: 100dvw;
   position: relative;
@@ -45,5 +45,84 @@
     font-size: calc(28px + (64 - 28) * ((100vw - 300px) / (800 - 300)));
     margin: 3rem auto 0 auto;
     max-width: clamp(280px, 90dvw, 700px);
+  }
+} */
+
+.contactContainer {
+  height: auto;
+  width: 100dvw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.waveOrbContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+.formContainer {
+  overflow: auto;
+  position: relative;
+  flex: 1;
+}
+
+.header {
+  font-size: calc(24px + (86 - 24) * ((100vw - 300px) / (1900 - 300)));
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 3rem 0 0 6rem;
+}
+
+.catch {
+  font-weight: 900;
+  color: var(--sage-800);
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .waveOrbContainer {
+    display: none;
+  }
+
+  .header {
+    font-size: calc(28px + (64 - 28) * ((100vw - 300px) / (800 - 300)));
+    margin: 3rem auto 0 auto;
+    max-width: clamp(280px, 90dvw, 700px);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .waveOrbContainer {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin: 2rem 0; /* Adjust spacing as needed */
+    order: 1;
+  }
+
+  .formContainer {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    order: 0;
+    margin: 0 auto;
   }
 }
