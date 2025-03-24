@@ -39,6 +39,8 @@
   /* Screen sizes */
   --screen-tablet: 768px;
   --screen-laptop: 1200px;
+
+  --max-width: 1900px;
 }
 
 * {

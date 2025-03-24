@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import OrganicGrowthPlane from "@/components/organicGrowth/OrganicGrowthPlane";
 // import TexturePlane from "@/components/textureplane/TexturePlane";
 import ContactSection from "@/components/contactSection/ContactSection";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <ContactSection />
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
