@@ -1,8 +1,8 @@
 .contactForm {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin-left: 6rem;
+  padding: 2rem
 }
 
 .formLine {
@@ -10,23 +10,21 @@
   gap: 1rem;
 }
 
-.formGroup {
-  margin-bottom: 1.5rem;
-}
-
 .contactForm label {
+  font-family: "Doner-Text", sans-serif;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 500;
   display: block;
-  margin-bottom: 0.5rem;
 }
 
 .contactForm input[type="text"],
 .contactForm input[type="email"],
 .contactForm textarea {
+  font-family: "Doner-Text", sans-serif;
   width: 100%;
   padding: 0.8rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
   border: none;
   border-bottom: 2px solid var(--sage-800);
   background-color: #fff;
@@ -37,7 +35,8 @@
 }
 
 .submitButton {
-  padding: 1rem 2rem;
+  font-family: "Doner-Text", sans-serif;
+  padding: 1rem 2rem 0.9rem 2rem;
   background-color: #4CAF50;
   color: #fff;
   font-size: 1.1rem;

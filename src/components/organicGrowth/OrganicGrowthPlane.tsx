@@ -23,7 +23,8 @@ type GrowthMaterialProps = {
 }
 
 const Scene: React.FC = () => {
-  const { gl } = useThree();
+  const { gl, size } = useThree();
+  const aspect = size.width / size.height;
   const materialRef = React.useRef<GrowthMaterialProps>(null);
   const beige = new Vector3(0.925,0.906,0.875);
   const darkGreen = new Vector3(0.263,0.337,0.314);
@@ -39,7 +40,7 @@ const Scene: React.FC = () => {
 
   return (
     <>
-      <Plane args={[6, 3]} position={[0, 0, 0]}>
+      <Plane args={[aspect * 3, 3]} position={[0, 0, 0]}>
         {/* takes around 4s for the growth to be completed. Switch to a basicMaterial afterwards - TODO: change to GSAP later on?*/}
         <organicMaterial ref={materialRef} attach="material" key={OrganicMaterial.key} uTime={0.} uProgress= {0.} uAspect={1.} uGrowthColor={darkGreen} uBaseColor={beige} />
       </Plane>

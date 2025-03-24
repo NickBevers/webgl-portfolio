@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import styles from './GridItem.module.css'
-import { AboutType } from "@/app/page"
+import { AboutType } from "../gridSection/GridSection";
 import { FC } from "react";
 
 interface GridItemProps {
@@ -15,8 +15,7 @@ const PlusIcon = (
 );
 
 const GridItem: FC<GridItemProps> = ({ item }) => {
-  const openLink = (link: string) => console.log('link clicked')
-  // const openLink = (link: string) => window.open(link, '_blank')
+  const openLink = (link: string) => window.open(link, '_blank')
 
   return (
     <div className={styles.gridItem}>
