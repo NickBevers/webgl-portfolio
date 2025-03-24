@@ -1,12 +1,69 @@
+/* Scoped grid-area with the local class */
+.gridContainer > [data-id="whatsapp"] { grid-area: whatsapp; }
+.gridContainer > [data-id="empty1"] { grid-area: empty1; }
+.gridContainer > [data-id="webDev"] { grid-area: webDev; }
+.gridContainer > [data-id="brownLogo1"] { grid-area: brownLogo1; }
+.gridContainer > [data-id="sageLogo"] { grid-area: sageLogo; }
+.gridContainer > [data-id="accessibility"] { grid-area: accessibility; }
+.gridContainer > [data-id="empty2"] { grid-area: empty2; }
+.gridContainer > [data-id="empty3"] { grid-area: empty3; }
+.gridContainer > [data-id="webDesign"] { grid-area: webDesign; }
+.gridContainer > [data-id="empty4"] { grid-area: empty4; }
+.gridContainer > [data-id="brownLogo2"] { grid-area: brownLogo2; }
+.gridContainer > [data-id="customers"] { grid-area: customers; }
+
 .gridContainer {
   width: 100dvw;
   display: grid;
   gap: 0px;
   padding: 0px;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "whatsapp empty1 webDev brownLogo1"
+    "sageLogo accessibility empty2 empty3"
+    "webDesign empty4 brownLogo2 customers";
+}
 
-  @container (max-width: var(--screen-tablet)) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+/* Media query for 900px - 1200px */
+@media (max-width: 1200px) and (min-width: 900px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "whatsapp brownLogo1 webDev"
+    "sageLogo accessibility empty1"
+    "empty2 webDesign empty4"
+    "brownLogo2 empty3 customers";
+  }
+}
+
+/* Media query for 600 - 899 */
+@media (max-width: 899px) and (min-width: 300px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "whatsapp brownLogo1"
+    "sageLogo webDev"
+    "accessibility empty1"
+    "empty2 webDesign"
+    "customers empty3";
+  }
+
+  .gridContainer > [data-id="empty4"], .gridContainer > [data-id="brownLogo2"] {
+    display: none;
+  }
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 900px) {
+  .icon {
+    width: 32px !important;
+    height: 32px !important;
   }
 }

@@ -14,11 +14,11 @@ const PlusIcon = (
   </div>
 );
 
-const GridItem: FC<GridItemProps> = ({ item }) => {
+const GridItem: FC<GridItemProps> = ({ item, ...props }) => {
   const openLink = (link: string) => window.open(link, '_blank')
 
   return (
-    <div className={styles.gridItem}>
+    <div className={styles.gridItem} {...props}>
       {/* If hover is enabled -> use textureplane */}
       {/* <TexturePlane textureUrl1="/images/temp.jpg" textureUrl2="/images/temp2.jpg" displacementUrl="/images/displacement.jpg" /> */}
 

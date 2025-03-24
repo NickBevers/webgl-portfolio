@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  width: clamp(250px, 30dvw, 700px);
+  width: clamp(250px, 35dvw, 700px);
   height: auto;
   aspect-ratio: 1/1;
   background-color: transparent;

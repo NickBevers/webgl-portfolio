@@ -1,8 +1,8 @@
 .contactContainer {
   height: auto;
   width: 100dvw;
-  position: relative; /* Ensure the container is positioned relative for absolute positioning */
-  overflow: hidden; /* Ensure the container itself does not overflow */
+  position: relative;
+  overflow: hidden;
 }
 
 .waveOrbContainer {
@@ -18,7 +18,7 @@
 }
 
 .header {
-  font-size: 5.4rem;
+  font-size: calc(24px + (86 - 24) * ((100vw - 300px) / (1900 - 300)));
   text-transform: uppercase;
   font-weight: 200;
   margin: 3rem 0 0 6rem;
@@ -27,4 +27,23 @@
 .catch {
   font-weight: 900;
   color: var(--sage-800);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .header {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .waveOrbContainer {
+    display: none;
+  }
+
+  .header {
+    font-size: calc(28px + (64 - 28) * ((100vw - 300px) / (800 - 300)));
+    margin: 3rem auto 0 auto;
+    max-width: clamp(280px, 90dvw, 700px);
+  }
 }

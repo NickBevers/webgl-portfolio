@@ -20,13 +20,6 @@
   width: 3rem;
   height: 3rem;
   z-index: 5;
-
-  @container (max-width: var(--screen-tablet)) {
-    top: -1rem;
-    right: -1rem;
-    width: 2rem;
-    height: 2rem;
-  }
 }
 
 .topLeft {
@@ -56,4 +49,21 @@
   bottom: 1rem;
   right: 1rem;
   text-align: end;
+}
+
+@media (max-width: 1200px) {
+  .plusIcon {
+    top: -1rem;
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Media query for 600 - 899 */
+@media (max-width: 899px) and (min-width: 300px) {
+  .topLeft {
+    top: 1rem;
+    left: 1rem;
+  }
 }
