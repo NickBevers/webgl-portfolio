@@ -150,8 +150,6 @@ const ShockWaveSphere: React.FC = () => {
         <pointLight position={[2, 1, 2]} intensity={0.8} />
         <pointLight position={[-2, -1, 2]} intensity={0.8} />
         <SphereCanvas />
-        {/*  TODO: Re-enable controls? */}
-        {/* <OrbitControls /> */}
       </Canvas>
     </div>
   )
