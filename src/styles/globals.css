@@ -61,3 +61,8 @@ p {
   font-family: 'Doner-Text';
   font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1900 - 300)));
 }
+
+input:focus, textarea:focus {
+  border: none;
+  outline: none;
+}

@@ -66,4 +66,8 @@
     top: 1rem;
     left: 1rem;
   }
+
+  .bottomRight p {
+    font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (899 - 300)));
+  }
 }
