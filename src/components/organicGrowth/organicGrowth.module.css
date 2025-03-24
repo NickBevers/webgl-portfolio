@@ -44,6 +44,10 @@
   transform: translateX(10%);
 }
 
+@media (max-width: 900px) {
+  /* Change font size for Name (Nick bevers) */
+}
+
 
 @keyframes fadeIn{
   0%{
