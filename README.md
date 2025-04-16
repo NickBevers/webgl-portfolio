@@ -5,6 +5,7 @@ Welcome to my portfolio! This project is a first step towards showcasing my pass
 ## About Me
 Hi there 👋
 I'm Nick Bevers, a frontend developer with a keen interest in building interactive and visually striking web experiences. My work blends code and creativity, leveraging tools like WebGL, Three.js, and GSAP to push the boundaries of what's possible for me on the web right now!
+Besides that, I am actively working towards certifying myself as someone with a passion for web accessibility and how we can combine visually stunning solutions with perfectly accessible features.
 
 ## Technologies & Tools
 - HTML, CSS, JavaScript (ES6+)
@@ -21,25 +22,51 @@ This portfolio is a work in progress and represents the first step in my journey
 ## Installation & Running Locally
 1. Clone the repository:
     ```bash
-    git clone https://github.com/nickbevers/portfolio.git
+    git clone https://github.com/nickbevers/webgl-portfolio.git
     ```
 2. Navigate into the project folder:
     ```bash
     cd portfolio
     ```
 3. Install dependencies:
+    You can use your preferred package manager:
+    **Using npm:**
     ```bash
     npm install
     ```
-4. Run the development server:
+    
+    **Using Yarn:**
+    ```bash
+    yarn install
+    ```
+    
+    **Using Bun:**
+    ```bash
+    bun install
+    ```
+
+4. Run the development server
+    Start the dev server with your chosen tool:
+    **Using npm:**
     ```bash
     npm run dev
     ```
+    
+    **Using Yarn:**
+    ```bash
+    yarn dev
+    ```
+    
+    **Using Bun:**
+    ```bash
+    bun run dev
+    ```
+    
 5. Open [localhost:3000](http://localhost:3000) in your browser.
 
 ## Contact
 I'm always eager to connect and collaborate! Feel free to reach out:
-- Email: nick.bevers@example.com
+- Email: hello@nickbevers.dev
 - LinkedIn: [Nick Bevers](https://www.linkedin.com/in/nickbevers/)
 - Twitter: [@nickbevers](https://twitter.com/nickbevers)
 
